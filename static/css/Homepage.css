@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0, 0, 0);
+}
+.container{
+    width: 100%;
+    height: 11vh;
+    background: url("../img/learneasy2.jpg");
+    background-size: 195vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+margin: 8px;
+background-image: linear-gradient(to right,  #eb9bff, #fc44c5  );
+border: 5px;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+top: 7px;
+left: 20px;
+z-index: 1;
+}
+
+/* menuicon body */
+.menu div{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-image: linear-gradient(to right,  #eb9bff, #fc44c5  );
+    position: relative;
+}
+.menu .topLine{
+    transform: translate(-50%, -10px);
+}
+
+.menu .bottomLine{
+    transform: translate(-50%, 6px);
+}
+
+.openmenu .topLine{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.openmenu .bottomLine{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openmenu .middleLine{
+    width: 0;
+}
+
+/* black shadow of menu */
+.menubox{
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 100%;
+    transition: width 0.5s, height 05.s, border-radius 0.5s;
+}
+
+.menubox.openmenu{
+    width: 100%;
+    height: 100vh;
+    border-bottom-left-radius: 0 ;
+    transition: 0.6s;
+}
+.menubox ul li{
+    list-style: none;
+    margin: 60px;
+    text-align: center;
+}
+
+.menubox ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+    /* text-shadow: 0 0 0 deeppink;*/
+    transition: transform 2s;
+}
+span{
+    color: deeppink;
+}
+.menu span{
+    background: white;
+    width: 75%;
+    height: 4px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+}
+.profile{
+    position: absolute;
+    right: 25px;
+    top: 16px;
+}
+body {
+    background: url(img/5.jpg);
+    /* opacity: 0.5; */
+    /* no-repeat center center/cover */
+    /* height: 2000px;
+    width: 1349px; */
+}
+
+body background {
+    opacity: 0.5;
+}
+
+/*
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: black;
+} */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    /* because I need to give padding to this element that's why i have to make its display block */
+    display: block;
+    padding: 10px;
+    margin: 7px;
+    margin-left: 123px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: greenyellow;
+    /* background-color: rgb(255, 144, 203); */
+    border-radius: 25px;
+}
+
+body hr {
+    animation: hr1 5s ease-out normal forwards;
+    /* animation-direction: ; */
+    height: 1px;
+    width: 900px;
+    margin: auto;
+    background-color: rgb(255, 194, 226);
+    border: none;
+}
+
+@keyframes hr1 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 900px;
+    }
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 200px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .para {
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+#home .para1 {
+    font-size: 18px;
+}
+
+#home h1 {
+    font-size: 36px;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px 10px;
+    padding: 5px 10px;
+    border-color: white;
+}
+
+.btn a {
+    text-decoration: none;
+    color: deeppink;
+    font-weight: 850;
+}
+
+.btn a:hover {
+    color: greenyellow;
+    background-color: deeppink;
+}
+
+.btn:hover {
+    color: greenyellow;
+    background-color: deeppink;
+    font-weight: 950;
+    padding: 7px 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.primary {
+    color: deeppink;
+}
+
+.hsecondary {
+    color: deeppink;
+}
+
+#services {
+    display: flex;
+    margin: 34px;
+    align-items: center;
+}
+
+#services .box {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 5px;
+    align-items: center;
+    background-color: rgb(255, 226, 226);
+
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+#services .box1 {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 5px;
+    align-items: center;
+    background-color: rgb(255, 226, 226);
+
+}
+
+#services .box1 img {
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 150px;
+    width: 160px;
+}
+
+#services .box2 {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 50px;
+    margin-top: 5px;
+    align-items: center;
+    background-color: rgb(255, 226, 226);
+
+}
+
+#services .box2 img {
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 160px;
+    width: 150px;
+}
+
+/* .box a{
+    text-decoration: none;
+}
+
+.box a:hover{
+    color: deeppink;
+    background-color: greenyellow;
+} */
+
+#client{
+background-color: whitesmoke;
+height: 300px;
+width: 1364.5px;
+align-items: center;
+}
+
+#client h1{
+    color: deeppink;
+    font-size: 34px;
+}
+
+#clients{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.clientItem img {
+    height: 160px;
+    width: 165px;
+    margin: 52px;
+}
+
+.ibm img {
+    height: 160px;
+    width: 250px;
+    margin: 55px;
+}
+.microsoft img {
+    height: 160px;
+    width: 250px;
+    margin: 55px;
+}
+.skype img {
+    height: 160px;
+    width: 250px;
+    margin: 55px;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}

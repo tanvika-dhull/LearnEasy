@@ -1,0 +1,73 @@
+body {
+    background: url("../img/learneasy2.jpg");
+    background-size: 100%;
+}
+
+#login {
+    background-image: linear-gradient(to right, #eb9bff, #fc44c5);
+    font-weight: bold;
+    color: black;
+    border-color: linear-gradient(to right, #eb9bff, #fc44c5);
+}
+
+#signup {
+    background-image: linear-gradient(to right, #eb9bff, #fc44c5);
+    font-weight: bold;
+    color: black;
+}
+
+#over {
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fc44c5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.close{
+    position: absolute;
+    right: -14px;
+    top: -14px;
+}
+.logo{
+    position: absolute;
+  left: 18px;
+  font-family: 'cursive', monospace;
+  font-weight: bolder;
+  top: 2px;
+}
+.logo1{
+    position: absolute;
+  left: 56px;
+  top: 27px;
+  font-family: 'fantasy', monospace;
+  font-weight: 900;
+  color: deeppink;
+}
+.logo2{
+    position: absolute;
+  left: 599px;
+  font-family: 'cursive', monospace;
+  font-weight: bolder;
+  top: 13px;
+}
+.logo3{
+    position: absolute;
+  left: 642px;
+  top: 32px;
+  font-family: 'fantasy', monospace;
+  font-weight: 900;
+  color: deeppink;
+}
